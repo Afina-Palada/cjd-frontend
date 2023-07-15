@@ -152,9 +152,9 @@
   
   <main>
     <div class="header">
-      <a href="/#"><img src="build/img/logo.png" alt="" class="logo"></a>
+      <a href="/#"><img src="img/logo.png" alt="" class="logo"></a>
       <div class="header-right">
-        <button on:click={openModal} class="profile-button"><img src="build/img/icon_man.png" alt="Reg_button" class='profile'/></button>
+        <button on:click={openModal} class="profile-button"><img src="img/icon_man.png" alt="Reg_button" class='profile'/></button>
       </div>
     </div>
     <Router {routes}/>
