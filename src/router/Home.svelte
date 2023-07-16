@@ -254,11 +254,39 @@
         color: #fff;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin: 0px;
-        margin-bottom: 10.5%;
+        margin-bottom: 7%;
     }
 
     input::placeholder {
         text-align: center;
+    }
+
+    @media screen and (max-width: 500px) {   
+      .search-container {
+        display: block;
+        align-items: center;
+      }
+
+      .search-field {
+          padding: 2px;
+          /* width: 10vh; */
+          font-size: 2em;
+      }
+
+      .centered-text {
+          font-size: 2em;
+          line-height: 100%;
+      }
+
+      .bot-text {
+        font-size: 1.15em;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 0px;
+        margin-bottom: 5%;
+    }
     }
   </style>
   
