@@ -172,4 +172,4 @@
         <input class="search-select city-input" type="date" id="search-date" bind:value={searchDate} on:input={handleSearchDateInput}>
     </div>
 </div>
-<div type="text" class="prognose-container"><button class="prognose">СПРОГНОЗИРОВАТЬ</button></div>
+<div type="text" class="prognose-container"><a href="/#/last"><button class="prognose">СПРОГНОЗИРОВАТЬ</button></a></div>
