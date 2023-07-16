@@ -1,3 +1,29 @@
+<script>
+  import { Line } from 'svelte-chartjs';
+  import { data } from './data.js';
+
+  import {
+    Chart as ChartJS,
+    Title,
+    Tooltip,
+    Legend,
+    LineElement,
+    LinearScale,
+    PointElement,
+    CategoryScale,
+  } from 'chart.js';
+
+  ChartJS.register(
+    Title,
+    Tooltip,
+    Legend,
+    LineElement,
+    LinearScale,
+    PointElement,
+    CategoryScale
+  );
+</script>
+
 <style>
   .content {
     margin-left: 10%;
@@ -41,7 +67,7 @@
 
   .city-input {
       width: 25%;
-      height: 10vh;
+      height: 8vh;
 
       background: #F1F1F1;
       border-radius: 20px;
@@ -52,6 +78,12 @@
 
   .top-btns {
     text-align: center;
+  }
+
+  .graphic {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
   }
 </style>
 <div class="content">
@@ -64,5 +96,8 @@
   <button class="city-input">Плацкарт</button>
   <button class="city-input">Купе</button>
   <button class="city-input">СВ</button>
+</div>
+<div class="graphic">
+  <Line {data} options={{ responsive: true }} height="82vh"/>
 </div>
 </div>
